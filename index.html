@@ -1,17 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>AEROUNION</title>
+    <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="deader">Header</header>
+    <header class="header">
+      <div class="header-container container">
+        <nav class="navbar">
+          <a href="./index.html" class="logo"
+            >Aero<span class="logo-secondary">union</span><br /><span
+              class="sublogo"
+              >Официальный диллер</span
+            ></a
+          >
+        </nav>
 
-    <main class="page">Main Page</main>
+        <ul class="lang__list">
+          <li class="lang__item">
+            <a href="./index.html" class="lang__link">Eng</a>
+          </li>
+          <li class="lang__item">
+            <a href="./index.html" class="lang__link active-lang">Rus</a>
+          </li>
+        </ul>
+        <button type="button" class="search-bar">
+          <svg class="search-svg" width="34" height="34">
+            <use href="./img/icons.svg#search-bar"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="main-navigation">
+        <button
+          type="button"
+          class="burger__open-btn"
+          aria-expanded="false"
+          aria-controls="burger__menu"
+        >
+          <span class="burger__line"></span>
+        </button>
+        <button type="button" class="scroll-down-btn">
+          <svg class="scroll-down-svg" width="50" height="43">
+            <use href="./img/icons.svg#scroll-down-arrow"></use>
+          </svg>
+          <span class="scroll-down-text">Листайте дальше</span>
+        </button>
+      </div>
+
+      <div class="burger__menu" id="burger__menu">
+        <button type="button" class="burger__close-btn">
+          <span class="burger__close-line"></span>
+        </button>
+        <nav class="burger__navbar">
+          <a href="./index.html" class="logo"
+            >Aero<span class="logo-secondary">union</span><br /><span
+              class="sublogo"
+              >Официальный диллер</span
+            ></a
+          >
+          <ul class="burger__list">
+            <li class="burger__item">
+              <a href="#" class="burger__item-link">Модели</a>
+            </li>
+            <li class="burger__item">
+              <a href="#" class="burger__item-link">Обзор вертолетов</a>
+            </li>
+            <li class="burger__item">
+              <a href="#" class="burger__item-link">О компании</a>
+            </li>
+            <li class="burger__item">
+              <a href="#" class="burger__item-link">Преимущества</a>
+            </li>
+            <li class="burger__item">
+              <a href="#" class="burger__item-link">Калькулятор</a>
+            </li>
+            <li class="burger__item">
+              <a href="#" class="burger__item-link">Услуги</a>
+            </li>
+            <li class="burger__item">
+              <a href="#" class="burger__item-link">Новости</a>
+            </li>
+          </ul>
+          <address class="burger__address">
+            <ul class="burger__address-list">
+              <a class="burger__address-link" href="tel:+380955995113"
+                >+38 (095) 599-51-13</a
+              >
+              <a class="burger__address-link" href="mailto:example@gmail.com"
+                >example@gmail.com</a
+              >
+              <a href="mailto:"></a>
+            </ul>
+          </address>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title">
+            Успейте купить<br /><span class="hero__subtitle">
+              Robinson R44, R66</span
+            >
+          </h1>
+          <p class="hero__text">
+            Желающие приобрести вертолет могут оформить заказ по действующим
+            ценам до очередного ежегодного повышения цен в январе 2021 года
+          </p>
+          <button class="hero__btn" type="button">Оформить заказ</button>
+        </div>
+
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg class="social__svg facebook--svg" width="34" height="34">
+                <use href="./img/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg class="social__svg youtube--svg" width="34" height="34">
+                <use href="./img/icons.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg class="social__svg instagram--svg" width="34" height="34">
+                <use href="./img/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
 
     <footer class="footer">Footer</footer>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/burger-menu.js"></script>
   </body>
 </html>
