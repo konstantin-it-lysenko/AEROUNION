@@ -520,6 +520,45 @@ body::-webkit-scrollbar-thumb {
   background: #2c2c2c;
 }
 
+.models-swiper-pagination__wrap {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.models__pagination-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.models__pagination-el {
+  color: #353535;
+  font-size: 24px;
+  font-weight: 250;
+  line-height: 100%;
+  letter-spacing: 4.44px;
+  transition: color var(--transition);
+}
+
+.models__pagination-el:is(:hover, :focus) {
+  color: #ffffff;
+}
+
+.current--models--pagination {
+  color: #ffffff;
+}
+
+.models__btn-svg {
+  fill: rgba(255, 255, 255, 0.1);
+  transition: fill var(--transition);
+}
+
+.models__btn-svg:is(:hover, :focus) {
+  fill: rgb(255, 255, 255);
+}
+
 .models__title {
   margin-top: 66px;
   max-width: 748px;

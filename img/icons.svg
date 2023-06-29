@@ -19,10 +19,10 @@
 <path d="M7.926 0v29.172l5.945-6.879 0.849 0.87-7.36 8.517-7.36-8.517 0.849-0.87 5.945 6.879v-29.172h1.132z"></path>
 </symbol>
 <symbol id="swiper-right-arrow" viewBox="0 0 17 32">
-<path fill="#fff" style="fill: var(--color1, #fff)" opacity="0.1" d="M1.876 32l15.013-16-15.013-16-1.876 2 13.136 14-13.136 14 1.876 2z"></path>
+<path d="M1.876 32l15.013-16-15.013-16-1.876 2 13.136 14-13.136 14 1.876 2z"></path>
 </symbol>
 <symbol id="swiper-left-arrow" viewBox="0 0 17 32">
-<path fill="#fff" style="fill: var(--color1, #fff)" opacity="0.1" d="M15.013 32l-15.013-16 15.013-16 1.876 2-13.136 14 13.136 14-1.876 2z"></path>
+<path d="M15.013 32l-15.013-16 15.013-16 1.876 2-13.136 14 13.136 14-1.876 2z"></path>
 </symbol>
 <symbol id="heli-distance" viewBox="0 0 32 32">
 <path fill="#919191" style="fill: var(--color2, #919191)" d="M5.389 9.614c-0.339 0-0.615 0.276-0.615 0.615s0.276 0.615 0.615 0.615 0.615-0.276 0.615-0.615c0-0.339-0.276-0.615-0.615-0.615z"></path>
