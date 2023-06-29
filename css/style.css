@@ -9,6 +9,7 @@ body {
   font-weight: 300;
   line-height: 24px;
   letter-spacing: 0.9px;
+  background: linear-gradient(136deg, #1f1f1f 0%, #121212 100%);
 }
 
 .container {
@@ -28,7 +29,7 @@ body {
   width: 100%;
   top: 0;
   left: 80px;
-  padding: 35px 0;
+  padding: 45px 0;
 }
 .header-container {
   display: flex;
@@ -43,6 +44,11 @@ body {
   line-height: 0.5;
   letter-spacing: 3px;
   text-transform: uppercase;
+  transition: color var(--transition);
+}
+.logo:hover,
+.logo:focus {
+  color: #c4c4c4;
 }
 .logo-secondary {
   font-weight: 250;
@@ -77,6 +83,11 @@ body {
   font-size: 16px;
   letter-spacing: 0.8px;
   text-transform: uppercase;
+  transition: color var(--transition);
+}
+.lang__link:hover,
+.lang__link:focus {
+  color: #fff;
 }
 .lang__link.active-lang {
   color: #fff;
@@ -84,6 +95,12 @@ body {
 }
 .search-bar {
   margin-left: 52px;
+  transform: scale(1);
+  transition: transform var(--transition);
+}
+.search-bar:hover,
+.search-bar:focus {
+  transform: scale(1.2);
 }
 .search-svg {
   fill: #ffffff;
@@ -103,10 +120,19 @@ body {
   background: linear-gradient(136deg, #1f1f1f 0%, #121212 100%);
 }
 
+.burger__open-btn {
+  position: relative;
+  top: 45px;
+  left: 0;
+  display: block;
+  width: 43px;
+  height: 30px;
+}
+
 .burger__line {
   position: absolute;
-  top: 55px;
-  left: 19px;
+  top: 15px;
+  left: 0;
   display: block;
   width: 43px;
   height: 3px;
@@ -118,7 +144,7 @@ body {
 .burger__line::before {
   position: absolute;
   content: "";
-  bottom: 12px;
+  top: 12px;
   left: 0;
   width: 100%;
   height: 3px;
@@ -130,13 +156,18 @@ body {
 .burger__line::after {
   position: absolute;
   content: "";
-  top: 12px;
+  bottom: 12px;
   left: 0;
   width: 100%;
   height: 3px;
   border-radius: 4px;
   background-color: #c4c4c4;
   transition: background-color var(--transition);
+}
+.burger__open-btn:is(:hover, :focus) > .burger__line,
+.burger__open-btn:is(:hover, :focus) > .burger__line::before,
+.burger__open-btn:is(:hover, :focus) > .burger__line::after {
+  background-color: #ffffff;
 }
 .scroll-down-btn {
   margin-bottom: 120px;
@@ -150,12 +181,27 @@ body {
   letter-spacing: 0.8px;
   transform: rotate(-90deg);
 }
+
 .scroll-down-svg {
+  fill: #c4c4c4;
   transform: rotate(90deg);
+  transition: transform var(--transition), fill var(--transition);
 }
+
 .scroll-down-text {
   max-width: 195px;
   height: 19px;
+  transition: color var(--transition);
+}
+
+.scroll-down-btn:is(:hover, :focus) .scroll-down-svg,
+.scroll-down-btn:is(:hover, :focus) .scroll-down-text {
+  fill: #ffffff;
+  color: #ffffff;
+}
+
+.scroll-down-btn:is(:hover, :focus) > .scroll-down-svg {
+  transform: translateX(-30%) rotate(90deg);
 }
 
 /** --BURGER MENU--  */
@@ -168,6 +214,7 @@ body {
   flex-direction: column;
   padding: 45px 60px;
   max-width: 619px;
+  width: 100%;
   height: 100vh;
   background: linear-gradient(136deg, #1f1f1f 0%, #121212 100%);
   box-shadow: 10px 0px 20px 0px rgba(0, 0, 0, 0.25);
@@ -186,6 +233,11 @@ body {
   right: 56px;
   width: 45px;
   height: 45px;
+}
+.burger__close-btn:is(:hover, :focus) > .burger__close-line,
+.burger__close-btn:is(:hover, :focus) > .burger__close-line::before,
+.burger__close-btn:is(:hover, :focus) > .burger__close-line::after {
+  background-color: #ffffff;
 }
 
 .burger__close-line {
@@ -220,6 +272,49 @@ body {
   transition: background-color var(--transition);
 }
 
+.burger__list {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.burger__item-link {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 100%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: color var(--transition);
+}
+
+.burger__item-link:is(:hover, :focus) {
+  color: #c4c4c4;
+}
+
+.burger__address {
+  margin-top: 85px;
+}
+
+.burger__address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.burger__address-link {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 100%;
+  letter-spacing: 2px;
+  transition: color var(--transition);
+}
+
+.burger__address-link:is(:hover, :focus) {
+  color: #ffffff;
+}
 /** --HERO--  */
 
 .hero {
@@ -235,6 +330,7 @@ body {
   background-position: center;
   background-size: cover;
 }
+
 .hero__title {
   padding-top: 332px;
   color: #fff;
@@ -244,9 +340,11 @@ body {
   letter-spacing: 3.6px;
   text-transform: uppercase;
 }
+
 .hero__subtitle {
   font-weight: 300;
 }
+
 .hero__text {
   margin: 10px 0 20px;
   max-width: 770px;
@@ -255,6 +353,7 @@ body {
   line-height: 140%;
   letter-spacing: 1px;
 }
+
 .hero__btn {
   padding: 20px 75px;
   color: #fff;
@@ -265,7 +364,17 @@ body {
   letter-spacing: 1px;
   text-transform: uppercase;
   border: 2px solid #fff;
+  transition: color var(--transition), border-color var(--transition),
+    transform var(--transition);
 }
+
+.hero__btn:is(:hover, :focus) {
+  color: #c4c4c4;
+  border-color: #c4c4c4;
+  box-shadow: 5px 4px 23px 1px rgba(255, 255, 255, 0.25);
+  transform: translate(1%, 5%);
+}
+
 .social__list {
   position: absolute;
   bottom: 50px;
@@ -288,6 +397,8 @@ body {
 
 .social__svg {
   fill: #c4c4c4;
+  transition: transform var(--transition), stroke var(--transition),
+    fill var(--transition);
 }
 
 .youtube--svg,
@@ -296,7 +407,18 @@ body {
   stroke: #c4c4c4;
 }
 
-.social__svg:hover,
-.social__svg:focus {
-  stroke: #a00000;
+.social__svg:is(:hover, :focus) {
+  stroke: #ffffff;
+  transform: scale(1.2);
+}
+
+.facebook--svg:is(:hover, :focus) {
+  transform: scale(1.12);
+}
+
+/** --MODELS--  */
+
+.models {
+  margin-left: 80px;
+  height: 100vh;
 }
