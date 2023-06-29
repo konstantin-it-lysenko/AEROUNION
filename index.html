@@ -13,11 +13,6 @@
     <title>AEROUNION</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <!-- SWIPER MODELS  -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
   </head>
   <body>
     <header class="header">
@@ -153,15 +148,250 @@
       </section>
 
       <section class="models">
-        <div class="container"></div>
+        <div class="container">
+          <div class="swiper models--swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide models--slide">
+                <div class="models__heli">
+                  <h3 class="models__heli-title">Robinson R44</h3>
+                  <img
+                    src="./img/models-heli-r44.png"
+                    alt="helicopter"
+                    width="442"
+                    height="335"
+                    class="models__heli-img"
+                  />
+                </div>
+                <div class="models__stats">
+                  <ul class="models__stats-list">
+                    <li class="models__stats-item">
+                      <svg class="models__stats-svg" width="32" height="32">
+                        <use href="./img/icons.svg#heli-speed"></use>
+                      </svg>
+                      <p class="models__stats-text">240 км/ч</p>
+                    </li>
+                    <li class="models__stats-item">
+                      <svg class="models__stats-svg" width="26" height="26">
+                        <use href="./img/icons.svg#heli-seats"></use>
+                      </svg>
+                      <p class="models__stats-text">3+1 пасс</p>
+                    </li>
+                    <li class="models__stats-item">
+                      <svg class="models__stats-svg" width="32" height="32">
+                        <use href="./img/icons.svg#heli-distance"></use>
+                      </svg>
+                      <p class="models__stats-text">650 км</p>
+                    </li>
+                  </ul>
+                  <button type="button" class="models__stats-btn">
+                    Подробнее
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide models--slide">
+                <div class="models__heli">
+                  <h3 class="models__heli-title">Robinson R66</h3>
+                  <img
+                    src="./img/models-heli-r66.png"
+                    alt="helicopter"
+                    width="442"
+                    height="335"
+                    class="models__heli-img"
+                  />
+                </div>
+                <div class="models__stats">
+                  <ul class="models__stats-list">
+                    <li class="models__stats-item">
+                      <svg class="models__stats-svg" width="32" height="32">
+                        <use href="./img/icons.svg#heli-speed"></use>
+                      </svg>
+                      <p class="models__stats-text">240 км/ч</p>
+                    </li>
+                    <li class="models__stats-item">
+                      <svg class="models__stats-svg" width="26" height="26">
+                        <use href="./img/icons.svg#heli-seats"></use>
+                      </svg>
+                      <p class="models__stats-text">3+1 пасс</p>
+                    </li>
+                    <li class="models__stats-item">
+                      <svg class="models__stats-svg" width="32" height="32">
+                        <use href="./img/icons.svg#heli-distance"></use>
+                      </svg>
+                      <p class="models__stats-text">650 км</p>
+                    </li>
+                  </ul>
+                  <button type="button" class="models__stats-btn">
+                    Подробнее
+                  </button>
+                </div>
+              </div>
+              <!-- <div class="swiper-slide models--slide none">
+                <div class="models__heli">
+                  <h3 class="models__heli-title">Robinson R44</h3>
+                  <img src="./img/models-heli-r44.png" alt="helicopter" width="442" height="335" class="models__heli-img">
+                </div>
+                <div class="models__stats">
+                  <ul class="models__stats-list">
+                    <li class="models__stats-item">
+                      <svg class="models__stats-svg" width="32" height="32">
+                        <use href="./img/icons.svg#heli-speed"></use>
+                      </svg>
+                      <p class="models__stats-text">240 км/ч</p>
+                    </li>
+                    <li class="models__stats-item">
+                      <svg class="models__stats-svg" width="26" height="26">
+                        <use href="./img/icons.svg#heli-seats"></use>
+                      </svg>
+                      <p class="models__stats-text">3+1 пасс</p>
+                    </li>
+                    <li class="models__stats-item">
+                      <svg class="models__stats-svg" width="32" height="32">
+                        <use href="./img/icons.svg#heli-distance"></use>
+                      </svg>
+                      <p class="models__stats-text">650 км</p>
+                    </li>
+                  </ul>
+                  <button type="button" class="models__stats-btn">Подробнее</button>
+                </div>
+              </div>
+              <div class="swiper-slide models--slide none">
+                <div class="models__heli">
+                  <h3 class="models__heli-title">Robinson R44</h3>
+                  <img src="./img/models-heli-r44.png" alt="helicopter" width="442" height="335" class="models__heli-img">
+                </div>
+                <div class="models__stats">
+                  <ul class="models__stats-list">
+                    <li class="models__stats-item">
+                      <svg class="models__stats-svg" width="32" height="32">
+                        <use href="./img/icons.svg#heli-speed"></use>
+                      </svg>
+                      <p class="models__stats-text">240 км/ч</p>
+                    </li>
+                    <li class="models__stats-item">
+                      <svg class="models__stats-svg" width="26" height="26">
+                        <use href="./img/icons.svg#heli-seats"></use>
+                      </svg>
+                      <p class="models__stats-text">3+1 пасс</p>
+                    </li>
+                    <li class="models__stats-item">
+                      <svg class="models__stats-svg" width="32" height="32">
+                        <use href="./img/icons.svg#heli-distance"></use>
+                      </svg>
+                      <p class="models__stats-text">650 км</p>
+                    </li>
+                  </ul>
+                  <button type="button" class="models__stats-btn">Подробнее</button>
+                </div>
+              </div>
+              <div class="swiper-slide models--slide none">
+                <div class="models__heli">
+                  <h3 class="models__heli-title">Robinson R44</h3>
+                  <img src="./img/models-heli-r44.png" alt="helicopter" width="442" height="335" class="models__heli-img">
+                </div>
+                <div class="models__stats">
+                  <ul class="models__stats-list">
+                    <li class="models__stats-item">
+                      <svg class="models__stats-svg" width="32" height="32">
+                        <use href="./img/icons.svg#heli-speed"></use>
+                      </svg>
+                      <p class="models__stats-text">240 км/ч</p>
+                    </li>
+                    <li class="models__stats-item">
+                      <svg class="models__stats-svg" width="26" height="26">
+                        <use href="./img/icons.svg#heli-seats"></use>
+                      </svg>
+                      <p class="models__stats-text">3+1 пасс</p>
+                    </li>
+                    <li class="models__stats-item">
+                      <svg class="models__stats-svg" width="32" height="32">
+                        <use href="./img/icons.svg#heli-distance"></use>
+                      </svg>
+                      <p class="models__stats-text">650 км</p>
+                    </li>
+                  </ul>
+                  <button type="button" class="models__stats-btn">Подробнее</button>
+                </div>
+              </div>
+              <div class="swiper-slide models--slide none">
+                <div class="models__heli">
+                  <h3 class="models__heli-title">Robinson R44</h3>
+                  <img src="./img/models-heli-r44.png" alt="helicopter" width="442" height="335" class="models__heli-img">
+                </div>
+                <div class="models__stats">
+                  <ul class="models__stats-list">
+                    <li class="models__stats-item">
+                      <svg class="models__stats-svg" width="32" height="32">
+                        <use href="./img/icons.svg#heli-speed"></use>
+                      </svg>
+                      <p class="models__stats-text">240 км/ч</p>
+                    </li>
+                    <li class="models__stats-item">
+                      <svg class="models__stats-svg" width="26" height="26">
+                        <use href="./img/icons.svg#heli-seats"></use>
+                      </svg>
+                      <p class="models__stats-text">3+1 пасс</p>
+                    </li>
+                    <li class="models__stats-item">
+                      <svg class="models__stats-svg" width="32" height="32">
+                        <use href="./img/icons.svg#heli-distance"></use>
+                      </svg>
+                      <p class="models__stats-text">650 км</p>
+                    </li>
+                  </ul>
+                  <button type="button" class="models__stats-btn">Подробнее</button>
+                </div>
+              </div> -->
+              <div class="swiper-button-prev">
+                <button type="button" class="models__prev-btn">
+                  <svg class="models__btn-svg" width="19" height="36">
+                    <use href="./img/icons.svg#swiper-left-arrow"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="swiper-pagination">
+                <ul class="models__pagination-list">
+                  <li class="models__pagination-el">01</li>
+                  <li class="models__pagination-el">02</li>
+                  <li class="models__pagination-el current--models--pagination">
+                    03
+                  </li>
+                  <li class="models__pagination-el">04</li>
+                  <li class="models__pagination-el">05</li>
+                </ul>
+              </div>
+              <div class="swiper-button-next">
+                <button type="button" class="models__next-btn">
+                  <svg class="models__btn-svg" width="19" height="36">
+                    <use href="./img/icons.svg#swiper-right-arrow"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <h2 class="models__title">
+            <span class="models__subtitle">Много информации - не знаете</span>
+            Что лучше выбрать?
+          </h2>
+          <p class="models__text">
+            Оставьте заявку, мы перезвоним вам и ответим на все ваши вопросы
+          </p>
+          <ul class="models__btn-list">
+            <li class="models__btn-item">
+              <button class="submit-application__btn">Оставить заявку</button>
+            </li>
+            <li class="models__btn-item">
+              <button class="show-models__btn">Все модели</button>
+            </li>
+          </ul>
+          <!-- <svg class="model__bg-img">
+            <use href="./img/icons.svg#models-bg"></use>
+          </svg> -->
+          <img src="./img/models-bg.png" alt="image" class="models__bg-img" />
+        </div>
       </section>
     </main>
 
     <footer class="footer">Footer</footer>
-
-    <!-- SWIPER MODELS  -->
-    <script src="./js/models-swiper.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <script
       defer
