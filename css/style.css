@@ -475,6 +475,7 @@ body::-webkit-scrollbar-thumb {
   padding: 140px 0 55px;
   height: 100vh;
   background: linear-gradient(136deg, #1f1f1f 0%, #121212 100%);
+  z-index: 0;
 }
 
 .models__swiper-wrapper {
@@ -495,6 +496,7 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-between;
   background: #232323;
   box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.15);
+  z-index: 2;
 }
 .models__heli {
   position: relative;
@@ -675,6 +677,7 @@ body::-webkit-scrollbar-thumb {
   right: 0;
   width: 900px;
   height: 500px;
+  z-index: -1;
 }
 
 .footer {
